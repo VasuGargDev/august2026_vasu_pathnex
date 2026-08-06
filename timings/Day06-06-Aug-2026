@@ -1,0 +1,41 @@
+git version
+git init
+git status
+git branch -M main
+git add.
+
+git rm --catched <file> #unstage 
+git restore <file> #discard 
+
+git commit -m “first commmit”
+git log
+git push -u origin main
+
+
+failed due to no SSH key
+git remote -V
+
+setup SSH
+create a new repo on github manually 
+Keygen and saved the public key 
+Also saved the new key to github > Settings > SSH keys
+
+pull before making changes
+create branch 
+make changes
+#add 
+#commit 
+#push
+
+create PR
+Add pathnex-pr-s as collaborator
+PR merged by collaborator
+Dekete the branch.
+
+Commit message convention
+git show <ID>
+Merge vs Rebase
+Pull vs Fetch
+Setting repositoy rules
+Managing merge conflicts.
+
