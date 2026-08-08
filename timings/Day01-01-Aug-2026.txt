@@ -1,0 +1,19 @@
+Roadmap for the month
+AWS created a root user account.
+Created an IAM user with power user access and logged in to IAM user
+
+Cloud computing basics
+Public cloud vs Private cloud
+
+IP address - Types of IPs
+Subnet
+There are 3 types of classes A, B and C
+Public IP and Private IP
+Private IPV4 Ranges and Classes
+CIDR How many IP’s are there in /24 /25
+
+Public subnet vs Private subnet
+Internet gateway vs NAT gateway
+
+
+
