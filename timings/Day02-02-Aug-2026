@@ -1,0 +1,28 @@
+
+
+
+Linux commands 
+pWD
+cd 
+mkdir 
+ls - list
+ls -la  for all the files including hidden
+ls -lah for human readable
+ls -lahr for reverse
+
+#single line comments
+
+“\ “ 
+
+rm
+mv
+
+touch
+vim
+`cat` and `chmod`
+
+
+./filename
+
+SOFT LINK vs HARD LINK
+
