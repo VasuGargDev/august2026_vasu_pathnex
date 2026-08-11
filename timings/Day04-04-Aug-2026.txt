@@ -1,0 +1,19 @@
+Command < Script < Programme < Application
+
+cut -d: -f1 /etc/passwd #check all users
+ROOT user concept
+
+Creating user 
+setting passsword
+Restarting the service to apply the changes
+Logged in to EC2 from local terminal
+
+Concept of JUMP SERVER
+Private key → Public key 
+
+chown chgrp
+
+umask
+intro to sed awk
+
+tar gzip zip
