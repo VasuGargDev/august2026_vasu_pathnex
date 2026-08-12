@@ -1,0 +1,37 @@
+Started with a demo on creating EC2 instance using Terraform.
+
+ps
+ps -ef | grep <process/application name>
+top
+
+kill -9 <process id> 
+pkill “process name”
+
+grep
+egrep #’e’ find all matching
+egrep -iv “running|completed|error”
+
+ls -la | wc -l #wordcount
+
+uname
+uptime 
+whoami # #display current usermane
+free 
+lscpu
+
+Networking commands
+ifconfig
+ipconfig
+netstat
+ping <ip>
+
+telnet <ip> <port> 
+
+ssh 
+scp 
+wget #download a file
+curl #communicate with a web server or API
+
+shebang
+Discussed probable interview questions
+CRON job
