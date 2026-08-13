@@ -1,0 +1,13 @@
+Useful concepts learned today :-
+Monolithic vs Microservices architecture
+*Docker enables microservices architecture
+VM vs Containerization
+*Containers are light-weight fast because they are using host kernel
+COPY RUN CMD EntryPoint
+Lifecycle of a container
+The complete development flow
+Docker network types
+Docker Swarm and Kubernetes
+System pruning 
+Optimizing the docker image size
+Finally, moving on to the practical implementation on my own machine watching the previous month's video.
