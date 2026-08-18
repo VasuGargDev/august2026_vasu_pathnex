@@ -1,0 +1,91 @@
+k0s — Simplest  way to install a kubernetes cluster 
+https://www.youtube.com/live/oxpB3dWqDlg?si=NmojvVlJGaPEveEx&t=1160
+
+Docker compose vs K8S
+
+POD is the smallerst deployable unit of K8S 
+(generally a shield for containers)
+Containers are kept inside POD
+Generally there are not more than 6 containers inside a POD (depends upon the application need)
+
+
+40:17 Bihar wale itne morden kbse ho gye!
+
+54:10 Differences in K8S cluster management (cloud vs on-prem)
+
+
+INterview question:-
+Tell me the architecture of K8S
+Indirect interview questions:-
+Asking workflow through commands - IF you are hitting kubectl how each component will iteract. 
+(it is going to which control plane or worker node first …)
+
+ANSWER:::
+
+Kubernetes Architecture and Components
+The Kubernetes architecture consists of two main parts:
+1. Control Plane (Master Node)
+2. Worker NODE(s)
+Control Plane consists of…….
+Worker NODE consists of……..
+
+
+POD is the smallest deployable unit of K8S (because container can never be deployed directly)
+Then POD creates containers inside itself according to the .yaml file
+
+CRI is called container interface and it is responsible for to fetch the image from any repo.
+
+Now comming to the Control Plane
+
+kube-api server → The hub if any component wants to communicate with another component.
+The hub everyone will communicate through & coordinate with.
+
+Control manager -  Responsible for the deployment
+(Determines the requirements (taking care of ETCD and .yaml files) and tells the CRI how many POD’s need to be deployed according to the requirement)
+
+Scheduler -  Responsible for scheduling the POD on the desired node NODE
+Taking care of the affinity rules (affinity node/pod selector)  , the scheduler deploys the POD on the desired node.
+
+1:07:30
+etcd - (Brain of the cluster)
+Keeps the record of who is working where and on what. 
+(Record here means Information of all instances running as meta data)
+(back up of etcd means a backup of all states of k8s cluster)
+
+
+Tool to take backup of K8S (etcd) → Velero
+In Cloud solutions like AWS, EKS manages the Kubernetes control plan and ETCD, So, customers don't have direct access to ETCD.
+For cluster level backup and disaster recovery, We use Kubernetes aware backup solutions. such as Valero or AWS backup. depending on the requirement.
+
+
+cloud control manager - facilitates connection and communication with cloud provider (API)
+Use case - It communicates with load balancer and fetches public link in case service type  (service.yaml) is set to Load balancer
+
+Now comming back inside the WORKER-NODE
+
+Kubelet ( The Node Captain ) - responsible for NODE communication with kube-api server
+Makes sure employees (POD) are working and if not working inform controller manager and terminate them and onboard new employee(new POD)
+
+kube-proxy - 
+Responsible for the net working/communication between the POD’s and others! is handeled by the  kube-proxy
+
+kube-proxy → Friend
+Kubelet → (Team Lead) Enemy
+
+
+
+Interview question
+If kubelet is affected the connectivity (from worker node) to Master node (Control plane)  is lost. So what will happen if you loose  connectivity to the master-node?
+
+The cluster will keep working but…
+Our worker nodes will not be able to gather new information. If any problems occur like:
+-pod is down, it won’t be able to restart
+-pod will not be replaced
+-will not able able to scale up or down acc to the requirement
+
+Hence unless there is any issue (or requirement to scale up or down) we do not require access to the master node.
+
+
+
+
+
