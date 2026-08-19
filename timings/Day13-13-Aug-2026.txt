@@ -1,0 +1,14 @@
+ K8S Day 2
+
+Amazon EKS
+Fully managed Kubernetes cluster infrastructure
+manual SETUP configuration
+
+Current version and support type
+Cluster creation steps
+Horizontal vs vertical auti-scaling
+
+LIFECYCLE of a POD
+Creating worker nodes
+
+Deleting the cluster
