@@ -1,1 +1,10 @@
 AWS Class 1
+
+
+
+Cloud vs. On-Premise: Explored infrastructure differences, public vs. private network access (VPN/Private IPs), and multi-cloud providers (AWS, Azure, GCP).
+AWS Global Infrastructure: Covered Regions, Availability Zones (AZs) for high availability, and multi-account management using Landing Zones and Control Towers.
+Core AWS Services:
+EC2: Mastered pricing models (On-Demand, Reserved, Spot), Auto-Scaling limits, AMIs, instance types, and security configurations.
+IAM & Security: Clarified authentication vs. authorization, IAM policies (JSON structure), and ARNs.
+VPC & S3: Learned VPC components (Internet vs. NAT gateways, public/private subnets, route tables) and S3 storage classes.
